@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Harsha S. Bhat</title>
+    <meta name="description" content="Harsha S. Bhat's webpage">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="Harsha S. Bhat" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+  <div class="page">
+    <header class="site-header">
+    <a class="site-title" href="/">Harsha S. Bhat</a>
+    <nav class="site-nav">
+        <a href="#" class="menu-icon menu.open"></a>
+        <div class="trigger"><h1>Main Navigation</h1>
+            <ul class="menu">
+    
+    
+     <li><a href="/publications/" class="page-link">Publications︎</a>
+    
+    </li>
+    
+</ul>
+
+        </div>
+    </nav>
+</header>
+
+
+    <div class="post" >
+    <header class="post-header">
+        <h1></h1>
+    </header>
+
+    <div class="captioned-img alignleft">
+    <a href="images/BHAT3.png">
+    
+    <img src="images/BHAT3.png" height="230px" />
+    </a>
+</div>
+
+<p>I am a <a href="http://www.cnrs.fr/index.html">CNRS</a> Research Scientist working at the <a href="http://www.geologie.ens.fr">Laboratoire de Géologie</a> in <a href="http://www.ens.fr">Ecole Normale Supérieure</a>.</p>
+
+<p>I work mainly at the interface between Earthquake Physics and Solid Mechanics making occasional excursions into Rock Mechanics, Tectonics and Seismology.</p>
+
+<p>You can reach me at <a href="files/directions.pdf">Laboratoire de Géologie, 24 Rue Lhomond, 75005 Paris</a></p>
+
+<p>More info: <a href="https://www.dropbox.com/s/y8kl0oo2b7uksvk/CurriculumVitae.pdf?dl=0">CV</a>, <a href="http://scholar.google.com/citations?user=ZHskR34AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>, <a href="/bio/">Short Biography</a>, <a href="https://orcid.org/0000-0003-0361-1854">ORCID</a>, <a href="/contact/">Contact Details</a></p>
+
+<script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window()
+external_new_window();
+</script>
+
+
+</div>
+
+
+
+    <footer class="site-footer">
+    Last updated on May 19, 2020<br />
+    Using <a href="http://jekyllrb.com/">Jekyll</a>
+    
+     :: <a href="https://github.com/gchauras/www">Based on Gaurav Chaurasia's site</a>
+    
+</footer>
+
+
+    </div>
+  </body>
+
+</html>

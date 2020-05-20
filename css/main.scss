@@ -1,0 +1,87 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$font-weight-normal: 350;
+$font-weight-bold:   600;
+
+$base-font-family: "Source Code Pro Regular", "Lato", -apple-system, "San Francisco", "Helvetica Neue", Helvetica, Roboto, "Segoe UI", "Segoe WP", Arial, Ubuntu, sans-serif;
+$base-font-size:   13pt;
+$base-line-height: 1.25;
+
+$heading-font-family: $base-font-family;
+$heading-font-size:   15pt;
+$heading-line-height: 1.5;
+
+$small-font-size:  0.875em;
+$vsmall-font-size: 0.36em;
+$spacing-unit:     1.5em;
+
+$grey-vlight:#fefefe;
+$grey-light: #ccc;
+$grey:       #666;
+$grey-dark:  #444;
+$grey-vdark: #111;
+$blue:       #0000ff;
+$orange:     #ca6c18;
+$red:        #b6321c;
+$harvard:    #c90016;
+$white:		#FFFFFF;
+$black:     #000;
+
+$background:        $white;
+$dark-background:   darken($background, 5%);
+$text-color:        $black;
+$text-light-color:  $grey;
+$url-color:         $blue;
+$url-hover-color:   $harvard;
+$header-text-color: $grey-vdark;
+$header-hover-color:$harvard;
+$header-hover-url:  $harvard;
+$line-color:        $grey-light;
+
+// Width of the content area
+$content-width:    50em;
+$content-min-width:15em;
+$mobile:           32em;
+$desktop:          50em;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "header",
+    "mobile-header",
+    "base",
+    "footer",
+    "page",
+    "syntax-highlighting",
+    "fancy-image"
+;
+
+.hClass{
+    height: 90px;
+    width: 200px;
+    
+    overflow: hidden;
+}
+
+.hClass p{
+    padding-left: 20px;
+}
+
+.iClass{
+    font-style: oblinque;
+    color: rgb(136, 136, 136);
+	font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+    margin-left: -20px;
+}
+
+.mClass{
+    white-space: normal;
+}
